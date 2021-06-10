@@ -1,9 +1,13 @@
+# Author: Jingze Dai
+# Date: 16/02/2021
+# Email Address: daij24@mcmaster.ca or david1147062956@163.com
 import unittest
 import Sort
 
 
 class MyTestCase(unittest.TestCase):
     def test_checkAvailable(self):
+        """! Testing of checkAvailable method """
         tst1 = [1, 2, 3, 4, 5, 6, 4]
         self.assertEqual(False, Sort.checkAvailable(tst1))
 
@@ -20,6 +24,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, Sort.checkAvailable(tst5))
 
     def test_SelectionSort(self):
+        """! Testing of selection sort method """
         tst6 = [1, 2, 3, 7, 5, 6, 4]
         true_tst6 = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(true_tst6, Sort.SelectionSort(tst6))
@@ -41,6 +46,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(true_tst10, Sort.SelectionSort(tst10))
 
     def test_InsertionSort(self):
+        """! Testing of insertion sort method """
         tst11 = [1, 2, 3, 7, 5, 6, 4]
         true_tst11 = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(true_tst11, Sort.InsertionSort(tst11))
@@ -62,6 +68,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(true_tst15, Sort.InsertionSort(tst15))
 
     def test_MergeSort(self):
+        """! Testing of merge sort method """
         tst16 = [1, 2, 3, 7, 5, 6, 4]
         true_tst16 = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(true_tst16, Sort.MergeSort(tst16))
@@ -83,6 +90,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(true_tst20, Sort.MergeSort(tst20))
 
     def test_ShellSort(self):
+        """! Testing of shell sort method """
         tst21 = [1, 2, 3, 7, 5, 6, 4]
         true_tst21 = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(true_tst21, Sort.ShellSort(tst21))
@@ -104,6 +112,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(true_tst25, Sort.ShellSort(tst25))
 
     def test_QuickSort(self):
+        """! Testing of quick sort method """
         tst26 = [1, 2, 3, 7, 5, 6, 4]
         true_tst26 = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(true_tst26, Sort.QuickSort(tst26))
