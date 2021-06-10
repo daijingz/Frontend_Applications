@@ -1,9 +1,13 @@
+# Author: Jingze Dai
+# Date: 16/02/2021
+# Email Address: daij24@mcmaster.ca or david1147062956@163.com
 import unittest
 import DFS
 
 
 class MyTestCase(unittest.TestCase):
     def test_DFS(self):
+        """! Getters of object's DFS Method """
         g1 = DFS.Graph(False)
         g1.add_edge((0, 1))
         g1.add_edge((0, 2))
