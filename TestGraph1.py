@@ -1,9 +1,13 @@
+# Author: Jingze Dai
+# Date: 16/02/2021
+# Email Address: daij24@mcmaster.ca or david1147062956@163.com
 import unittest
 import Graph1
 
 
 class MyTestCase(unittest.TestCase):
     def test_add_Node(self):
+        """! Test graph1 programs' adding node methods"""
         G1 = Graph1.Graph(5)
         G1.add_Node("1")
         G1.add_Node("2")
@@ -77,6 +81,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(G5.get_Node(), ["0", "1", "2", "3", "4", "5", "6"])
 
     def test_add_Edge(self):
+        """! Test graph1 programs' adding edge methods"""
         G6 = Graph1.Graph(6)
         G6.add_Node("0")
         G6.add_Node("1")
@@ -177,6 +182,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(G10.get_Edge()[-1], ["4", "6"])
 
     def test_get_Sublist(self):
+        """! Test graph1 programs' getting-sublist methods"""
         G1 = Graph1.Graph(5)
         G1.add_Node("1")
         G1.add_Node("2")
@@ -272,6 +278,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(G5.get_Sublist()[6], ["6"])
 
     def test_get_Vertex_Cover(self):
+        """! Test graph1 programs' getting-vertex-cover methods"""
         G6 = Graph1.Graph(6)
         G6.add_Node("0")
         G6.add_Node("1")
@@ -362,6 +369,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(G10.get_Vertex_Cover()[2], ["1", "2", "4"])
 
     def test_get_Minimum_Vertex_Cover(self):
+        """! Test graph1 programs' getting-minimum-vertex-cover methods"""
         G1 = Graph1.Graph(5)
         G1.add_Node("1")
         G1.add_Node("2")
@@ -437,6 +445,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(G5.get_Minimum_Vertex_Cover()[0], ["0", "1", "2", "5"])
 
     def test_get_Range_Vertex_Cover(self):
+        """! Test graph1 programs' getting-filtered-vertex-cover methods"""
         G6 = Graph1.Graph(6)
         G6.add_Node("0")
         G6.add_Node("1")
