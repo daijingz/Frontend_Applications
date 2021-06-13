@@ -38,13 +38,9 @@ function initialize() {
         numbers[i] = i + 1;
     }
     var ctr = numbers.length,temp,index;
-    // While there are elements in the array
     while (ctr > 0) {
-        // Pick a random index
         index = Math.floor(Math.random() * ctr);
-        // Decrease ctr by 1
         ctr--;
-        // And swap the last element with it
         temp = numbers[ctr];
         numbers[ctr] = numbers[index];
         numbers[index] = temp;
@@ -52,10 +48,9 @@ function initialize() {
 }  
 
 function clickHandler() {
-    //console.log("id" + this.id);
     var emptyID = checkMove(this.id);
     var target = document.getElementById(this.id);
-    //console.log(emptyID);
+
     if (emptyID >= 0) {
         target.animate({ backgroundColor: "lightblue" }, 200);
         var text = target.textContent;
