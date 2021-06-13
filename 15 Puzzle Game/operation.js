@@ -94,16 +94,18 @@ function checkWin(){
     flag = true;
     for(let i = 0; i < (size * size) - 1; i++){
         var cell = document.getElementById(i);
-        if(cell.textContent == i+1){
-            continue;
-        }else{
+        if(cell.textContent != i+1){
             flag = false;
         }
     }
+	
     if(flag){
-        var mesg = confirm("Congratulations！You win!! Do you want to play again?");
-        if(mesg){
-            location.reload()
-        }
+        var msg1 = confirm("You solve this puzzle!!! Want to play again?");
+    } else {
+		var msg1 = confirm("Sorry, you have not solve this puzzle!!! Want to play again?");
+	}
+	
+	if(msg1 == true){
+        location.reload()
     }
 }
