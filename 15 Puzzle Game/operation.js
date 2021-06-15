@@ -16,7 +16,7 @@ function createTable() {
             cell.id = counter;
             cell.addEventListener("click", clickHandler);
             row.appendChild(cell);
-            counter++;
+            counter = counter + 1;
         }
         board.appendChild(row);
     }
@@ -37,12 +37,12 @@ function initialize() {
     for (let i = 0; i < size ** 2; i++) {
         numbers[i] = i + 1;
     }
-    var ctr = numbers.length,temp,index;
-    while (ctr > 0) {
-        index = Math.floor(Math.random() * ctr);
-        ctr--;
-        temp = numbers[ctr];
-        numbers[ctr] = numbers[index];
+    var current = numbers.length,temp,index;
+    while (current > 0) {
+        index = Math.floor(Math.random() * current);
+        current = current - 1;
+        temp = numbers[current];
+        numbers[current] = numbers[index];
         numbers[index] = temp;
     }
 }  
@@ -74,9 +74,9 @@ function checkMove(id) {
     adjacentId = [topCellId, bottomCellId, rightCellId, leftCellId];
 
     if (adjacentId[2] % size == 0) {
-        adjacentId[2] = -1;
+        adjacentId[2] = - 1;
     } else if (adjacentId[3] % size == size - 1) {
-        adjacentId[3] = -1;
+        adjacentId[3] = - 1;
     }
 
     for (let i = 0; i < adjacentId.length; i++) {
@@ -92,7 +92,7 @@ function checkMove(id) {
 
 function checkWin(){
     flag = true;
-    for(let i = 0; i < (size * size) - 1; i++){
+    for(let i = 0; i < size ** 2 - 1; i++){
         var cell = document.getElementById(i);
         if(cell.textContent != i+1){
             flag = false;
@@ -101,9 +101,7 @@ function checkWin(){
 	
     if(flag){
         var msg1 = confirm("You solve this puzzle!!! Want to play again?");
-    } else {
-		var msg1 = confirm("Sorry, you have not solve this puzzle!!! Want to play again?");
-	}
+    }
 	
 	if(msg1 == true){
         location.reload()
