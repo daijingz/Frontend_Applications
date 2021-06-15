@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game 2: Flappy Birds</title>
+	<h1>Mini Game 2: Flappy Birds</h1>
+    <style>
+        #canvas{
+            background-image: url(background.png);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <div id="res"></div>
+</body>
+
+    <script>
+ 
+        var canvas = document.getElementById('canvas')
+        var context = canvas.getContext('2d')
+ 
+        var img = new Image();
+        img.src = 'birds.png'
+ 
+        var birdX = 200;
+        var birdY = 100;
+        var birdTime = null;
+        var stop = 0
+        img.onload = function () {
+            if(birdTime === null && stop === 0) {
+                birdTime = setInterval(function(){
+ 
+                    if (birdY <= 350) {
+                        birdY++
+                    }
+ 
+                    context.clearRect(0,0,800,400)
+                    drawColumn ()
+                    context.drawImage(img,0,0,52,45,birdX,birdY,52,45);
+                },10)
+            }
+        }
+        var click = null
+        document.onmouseup = function () {
+            if (stop === 0) {
+                context.drawImage(img,0,0,52,45,birdX,birdY,52,45);
+                clearInterval(click)
+            }
+            
+        }
+        document.onmousedown = function () {
+            if (stop === 0) {
+                click  = setInterval(function() { 
+                    context.drawImage(img,104,0,52,45,birdX,birdY,52,45);
+                    birdY = birdY-2
+                },10)
+                
+            }
+        }
+  
+        var columnArr = []
+        var columnTiner = null
+ 
+        function createColumn () {
+ 
+ 
+            columnTiner = setInterval(function() {
+                var column = {}
+                column.postionX = 800
+                column.postionY = - Math.round(Math.random() * 100 + 150);
+                column.imgA = new Image()
+                column.imgB = new Image()
+                column.imgA.src = 'pipe2.png'
+                column.imgB.src = 'pipe1.png'
+                column.id = new Date().getTime()
+ 
+                columnArr.push(column)
+            },1500)
+            
+        }
+        createColumn()
+ 
+        var same = null;
+        var mark = 0
+        function drawColumn () {
+            for(var i = 0 ; i < columnArr.length; i++) {
+                columnArr[i].postionX--
+                context.drawImage(columnArr[i].imgA,columnArr[i].postionX,columnArr[i].postionY - 100);
+ 
+                context.drawImage(columnArr[i].imgB,columnArr[i].postionX,columnArr[i].postionY + 450);
+            
+                if (birdX + 40 >= columnArr[i].postionX && birdX - 70 <= columnArr[i].postionX) {
+ 
+                    if (columnArr[i].id != same) {
+                        mark++
+                        same = columnArr[i].id 
+ 
+                        document.getElementById('res').innerHTML = "Score: " + mark + "."
+                    }
+ 
+                    if(birdY < columnArr[i].postionY + 300 || birdY + 35 > columnArr[i].postionY + 450) {
+ 
+                        clearInterval(columnTiner)
+                        clearInterval(birdTime)
+                        stop = 1
+                        document.getElementById('res').innerHTML = "Score: " + mark + ". Please restart it."
+                    }
+                }
+ 
+            }
+        }
+    </script>
+</html>
