@@ -11,16 +11,16 @@ var arr_now = [
 	[0, 0, 0, 0],
 	[0, 0, 0, 0]
 ];
-//重新开始游戏
+
 function restart() {
-	if(confirm("是否确定重新开始？")) {
+	if(confirm("Do you want to restart it?")) {
 		newGame();
 	}
 }
 window.onload = function() {
 	newGame();
 }
-//开始新的游戏
+
 function newGame() {
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
@@ -31,7 +31,7 @@ function newGame() {
 	panel_before();
 	score();
 }
-//随机选择产生数字的格子
+
 function getGrid() {
 	if(!isFull()) {
 		var gArr = new Array(16);
@@ -51,18 +51,18 @@ function getGrid() {
 		return grid[indexArr[Math.floor(Math.random() * indexArr.length)]];
 	}
 }
-//随机产生数字2或4
+
 function getRandom() {
 	var x = Math.random();
 	x < 0.5 ? x = 2 : x = 4;
 	return x;
 }
-//随机空格子产生随机数字2或4
+
 function newGridRandom() {
 	if(!isFull())
 		getGrid().innerHTML = getRandom();
 }
-//判断所选的格子是不是空格
+
 function isEmpty(x) {
 	if(x != null) {
 		return(x.innerHTML == '');
@@ -70,26 +70,25 @@ function isEmpty(x) {
 		return false;
 	}
 }
-//格子是否全满
+
 function isFull() {
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
-			var g = document.getElementById("grid_" + i + j);
-			if(isEmpty(g)) {
+			if(isEmpty(document.getElementById("grid_" + i + j))) {
 				return false;
 			}
 		}
 	}
 	return true;
 }
-//是否发生了改变
+
 function isChanged() {
 	if(arr_before.toString() == arr_now.toString())
 		return false;
 	else
 		return true;
 }
-//存储上一步前情况
+
 function panel_before() {
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
@@ -97,7 +96,7 @@ function panel_before() {
 		}
 	}
 }
-//存储当前情况
+
 function panel_now() {
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
@@ -105,7 +104,7 @@ function panel_now() {
 		}
 	}
 }
-//判断游戏是否结束（格子全满且相邻格子不相等）
+
 function isOver() {
 	var arr = new Array(4);
 	if(isFull()) {
@@ -136,7 +135,7 @@ function isOver() {
 		return false;
 	}
 }
-//向上移动
+
 function moveUp() {
 	panel_before();
 	for(var t = 0; t < 3; t++) {
@@ -158,7 +157,7 @@ function moveUp() {
 	}
 	panel_now();
 }
-//向下移动
+
 function moveDown() {
 	panel_before();
 	for(var t = 0; t < 3; t++) {
@@ -180,7 +179,7 @@ function moveDown() {
 	}
 	panel_now();
 }
-//向左移动
+
 function moveLeft() {
 	panel_before();
 	for(var t = 0; t < 3; t++) {
@@ -202,7 +201,7 @@ function moveLeft() {
 	}
 	panel_now();
 }
-//向右移动
+
 function moveRight() {
 	panel_before();
 	for(var t = 0; t < 3; t++) {
@@ -224,7 +223,7 @@ function moveRight() {
 	}
 	panel_now();
 }
-//获取键盘键
+
 document.onkeydown = function(event) {
 	if(isOver()) {
 		alert("Game Over !");
@@ -257,7 +256,7 @@ document.onkeydown = function(event) {
 	}
 	score();
 }
-//撤回上一步
+
 function regret() {
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
@@ -272,7 +271,7 @@ function regret() {
 	}
 	score();
 }
-//更换背景色
+
 function score() {
 	for(var i = 0; i < grid.length; i++) {
 		if(grid[i].innerHTML != "") {
