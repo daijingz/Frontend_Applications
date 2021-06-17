@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Game 4: Gobang</title>
+</head>
+<body>
+<h1> Mini Game 4: Gobang </h1>
+	<script type="text/javascript">
+		function Gobang() {
+			this.over = false;
+			this.player = true;
+			this.allChesses = [];
+			this.existChesses = [];
+			this.winsCount = 0;
+			this.wins = [];
+			this.myWins = [];
+			this.computerWins = [];
+		}
+		
+		Gobang.prototype.init = function(opts) {
+		    this.createCanvas(opts);
+		    this.boardInit();
+		    this.mouseMove();
+		    this.algorithmInit();
+		    this.dorpChess();
+		}
+		
+		Gobang.prototype.createCanvas = function(opts) {
+		    var opts = opts || {};
+		    if (opts.width && opts.width%30 !== 0) throw new RangeError(opts.width+'not a multiple result of 30');
+		    this.col = (opts.width && opts.width/30) || 15;
+ 
+		    var oCanvas = document.createElement('canvas');
+		    oCanvas.width = oCanvas.height = opts.width || 450;
+		    this.canvas = oCanvas;
+		    document.querySelector(opts.container || 'body').appendChild(this.canvas);
+		    this.ctx = oCanvas.getContext('2d');
+		}
+		
+		Gobang.prototype.boardInit = function(opts){
+		    this.drawBoard();
+		}
+ 
+		Gobang.prototype.drawBoard = function(){
+		    this.ctx.strokeStyle = "#bfbfbf";
+		    for (var i = 0; i < this.col; i++) {
+		        this.ctx.moveTo(15+ 30*i, 15);
+		        this.ctx.lineTo(15+ 30*i, this.col*30-15);
+		        this.ctx.stroke();
+		        this.ctx.moveTo(15, 15+ 30*i);
+		        this.ctx.lineTo(this.col*30-15, 15+ 30*i);
+		        this.ctx.stroke();
+		    }
+		}
+
+		Gobang.prototype.drawChess = function(x, y, player){
+		    var x = 15 + x * 30,
+		        y = 15 + y * 30;
+		    this.ctx.beginPath();
+		    this.ctx.arc(x, y, 13, 0, Math.PI*2);
+ 
+ 
+		    var grd = this.ctx.createRadialGradient(x + 2, y - 2, 13 , x + 2, y - 2, 0);
+		    if (player) {
+		        grd.addColorStop(0, '#0a0a0a');
+		        grd.addColorStop(1, '#636766');
+		    } else {
+		        grd.addColorStop(0, '#d1d1d1');
+		        grd.addColorStop(1, '#f9f9f9');
+		    }
+		    this.ctx.fillStyle = grd;
+		    this.ctx.fill()
+		}
+
+		Gobang.prototype.mouseMove = function(){
+		    var that = this;
+		    this.canvas.addEventListener('mousemove', function (e) {
+		        that.ctx.clearRect(0, 0, that.col*30, that.col*30);
+		        var x = Math.floor((e.offsetX)/30),
+		            y = Math.floor((e.offsetY)/30);
+ 
+		        that.drawBoard();
+		        that.focusChess(x, y);
+		        that.redrawedChess()
+		    });
+		}
+ 
+		Gobang.prototype.focusChess = function(x, y){
+		    this.ctx.beginPath();
+		    this.ctx.fillStyle = '#E74343';
+		    this.ctx.arc(15 + x * 30, 15 + y * 30, 6, 0, Math.PI*2);
+		    this.ctx.fill();
+		}
+ 
+		Gobang.prototype.redrawedChess = function(x, y){
+		    for (var i = 0; i < this.existChesses.length; i++) {
+		        this.drawChess(this.existChesses[i].x, this.existChesses[i].y, this.existChesses[i].player);
+		    }
+		}
+
+		Gobang.prototype.algorithmInit = function(){
+		    for (var x = 0; x < this.col; x++) {
+		        this.allChesses[x] = [];
+		        this.wins[x] = [];
+		        for (var y = 0; y < this.col; y++) {
+		            this.allChesses[x][y] = false;
+		            this.wins[x][y] = [];
+		        }
+		    }
+ 
+		    this.computedWins();
+ 
+		    for (var i = 0; i < this.winsCount; i++) {
+		        this.myWins[i] = 0;
+		        this.computerWins[i] = 0;
+		    }
+		}
+		
+		Gobang.prototype.computedWins = function(){
+		    for (var x = 0; x < this.col; x++) { 
+		        for (var y = 0; y < this.col-4; y ++) {
+		            this.winsCount ++; 
+		            for (var k = 0; k < 5; k ++) {
+		                this.wins[x][y+k][this.winsCount] = true;
+		            }
+		        }
+		    }
+		    for (var y = 0; y < this.col; y++) {
+		        for (var x = 0; x < this.col-4; x ++) {
+		            this.winsCount ++;
+		            for (var k = 0; k < 5; k ++) {
+		                this.wins[x+k][y][this.winsCount] = true;
+		            }
+		        }
+		    }
+	  	  	for (var x = 0; x < this.col-4; x++) { 
+	      	  	for (var y = 0; y < this.col-4; y ++) {
+	            	this.winsCount ++;
+		            for (var k = 0; k < 5; k ++) {
+		                this.wins[x+k][y+k][this.winsCount] = true;
+		            }
+	     	    }
+		    }
+	  	    for (var x = this.col-1; x >= 4; x --) { 
+	        	for (var y = 0; y < this.col-4; y ++) {
+		            this.winsCount ++;
+		            for (var k = 0; k < 5; k ++) {
+		                this.wins[x-k][y+k][this.winsCount] = true;
+		            }
+	      		}
+	    	}
+	  	}
+
+		Gobang.prototype.dorpChess = function(){
+		    var that = this;
+		    this.canvas.addEventListener('click', function(e) {
+
+		        if (that.over) return;
+		        var x = Math.floor((e.offsetX)/30),
+		            y = Math.floor((e.offsetY)/30);
+					
+		        if (that.allChesses[x][y]) return;
+		        that.checkChess(x, y)
+		        if (!that.over) {
+		            that.player = false;
+		            that.computerDropChess();
+		        }
+		    })
+		}
+
+		Gobang.prototype.checkChess = function(x, y){
+		    this.drawChess(x, y, this.player);
+		    this.existChesses.push({
+		        x: x,
+		        y: y,
+		        player: this.player
+		    });
+
+		    this.allChesses[x][y] = true;
+		    this.currWinChesses(x, y, this.player);
+		}
+
+		Gobang.prototype.currWinChesses = function(x, y, player){
+		    var currObj = player ? this.myWins : this.computerWins;
+		    var enemyObj = player ? this.computerWins : this.myWins;
+		    var currText = player ? 'Player' : 'Computer';
+		    for (var i = 1; i <= this.winsCount; i++) {
+		        if (this.wins[x][y][i]) {
+		            currObj[i-1] ++;
+		            enemyObj[i-1] = 6;
+		            if (currObj[i-1] === 5) {
+		                alert(currText+' wins!!!')
+		                this.over = true;
+		            }
+		        }
+		    }
+		}
+
+		Gobang.prototype.computerDropChess = function(){
+		    var myScore = [],
+		        computerScore = [],
+		        maxScore = 0;
+		    
+		    var scoreInit = function(){
+		        for( var x = 0; x < this.col; x ++) {  
+		            myScore[x] = [];
+		            computerScore[x] = [];
+		            for (var y = 0; y < this.col; y ++) {
+		                myScore[x][y] = 0;
+		                computerScore[x][y] = 0;
+		            }
+		        }
+		    }
+		    scoreInit.call(this);
+ 
+		    var x = 0, y = 0; 
+ 
+		    function formatScore(o, n) { 
+		        if (o < 6 && o > 0) {
+		            var n = 10;
+		            for (var i = 0; i < o; i++) {
+		                n *= 3;
+		            }
+		            return n
+		        }
+		        return 0
+		    }
+ 
+		    function existChess(arr) { 
+		        var existArr = [];
+		        for (var i = 0; i < arr.length; i++) {
+		            for (var j = 0; j < arr[i].length; j++) {
+		                if (!arr[i][j]) {
+		                    existArr.push({x:i, y:j})
+		                }
+		            }
+		        }
+		        return existArr;
+		    }
+ 
+		    var exceptArr = existChess(this.allChesses);
+ 
+		    for (var i = 0; i < exceptArr.length; i++) { 
+		        var o = exceptArr[i];
+		        for (var k = 0; k < this.winsCount; k++) {
+		            if (this.wins[o.x][o.y][k]) {
+		                myScore[o.x][o.y] += formatScore(this.myWins[k-1], 10);
+		                computerScore[o.x][o.y] += formatScore(this.computerWins[k-1], 11); 
+		            }
+		        }
+ 
+		        if (myScore[o.x][o.y] > maxScore) {
+		            maxScore = myScore[o.x][o.y];
+		            x = o.x;
+		            y = o.y;
+		        }else if (myScore[o.x][o.y] === maxScore) {
+		            if (computerScore[o.x][o.y] > computerScore[x][y]) {
+		                x = o.x;
+		                y = o.y;
+		            }
+		        }
+ 
+		        if (computerScore[o.x][o.y] > maxScore) {
+		            maxScore = computerScore[o.x][o.y];
+		            x = o.x;
+		            y = o.y;
+		        }else if (computerScore[o.x][o.y] === maxScore) {
+		            if (myScore[o.x][o.y] > myScore[x][y]) {
+		                x = o.x;
+		                y = o.y;
+		            }
+		        }
+		    }
+		    this.checkChess(x, y)
+		    if (!this.over) {
+		        this.player = true;
+		    }
+		}
+		var gobang = new Gobang();
+		gobang.init()
+	</script>
+</body>
+</html>
