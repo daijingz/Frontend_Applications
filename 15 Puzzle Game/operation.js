@@ -48,13 +48,13 @@ function initialize() {
 }  
 
 function clickHandler() {
-    var emptyID = checkMove(this.id);
+    var eBlockId = checkMove(this.id);
     var target = document.getElementById(this.id);
 
-    if (emptyID >= 0) {
+    if (eBlockId >= 0) {
         target.animate({ backgroundColor: "lightblue" }, 200);
         var text = target.textContent;
-        var empty = document.getElementById(emptyID);
+        var empty = document.getElementById(eBlockId);
         target.className = "emptyCell";
         target.innerHTML = "";
         empty.className = "cell";
