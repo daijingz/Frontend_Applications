@@ -7,7 +7,7 @@ This program is a series of programs using web programming languages. Some of th
 
 This project has used:
 * Regular web programming tools: **HTML, CSS and JavaScript**
-* **React.js and Node.js** advanced libraries (Have learnt a lot and library is coming)
+* **React.js and Node.js** advanced libraries (Have learnt a lot and works are coming)
 
 # Contact
 daij24@mcmaster.ca
