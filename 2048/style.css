@@ -1,47 +1,58 @@
-* {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			outline: 0;
-			font-weight: inherit;
-			font-style: inherit;
-			font-family: inherit;
-			text-align: left;
-			vertical-align: baseline;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-		}
-		#Game_top {
-			width: 600px;
-			height: 50px;
-			background: aliceblue;
-			margin: 0 auto;
-		}
-		#Game_top button {
-			font-size: 20px;
-			width: 140px;
-			height: 50px;
-			margin: 3px;
-			cursor: pointer;
-			background-color: gray;
-			color: white;
-			text-align: center;
-		}
+h1 { 
+	color: #7c795d;
+	text-align: center;
+	font-family: 'Trocchi', serif; 
+	font-size: 45px; 
+	font-weight: normal; 
+	line-height: 48px; 
+	margin: 0; 
+}
+
+
+
+p { 
+`	color: #685206;
+	text-align: center;
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 14px; 
+	line-height: 24px; 
+	margin: 0 0 24px; 
+	text-align: justify; 
+	text-justify: inter-word; 
+}
 		
-		#Game_panel {
-			width: 600px;
-			height: 600px;
-			background-color: beige;
-			margin: 0 auto;
-		}
-		.grid {
-			width: 140px;
-			height: 140px;
-			margin: 5px;
-			background-color: bisque;
-			float: left;
-			font-size: 80px;
-			line-height: 140px;
-			text-align: center;
-		}
+#Game_top {
+	width: 600px;
+	height: 50px;
+	background: aliceblue;
+	margin: 0 auto;
+}
+
+#Game_top button {
+	font-size: 20px;
+	width: 140px;
+	height: 50px;
+	margin: 3px;
+	cursor: pointer;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+		
+#Game_panel {
+	width: 600px;
+	height: 600px;
+	background-color: beige;
+	margin: 0 auto;
+}
+
+.grid {
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	background-color: bisque;
+	float: left;
+	font-size: 80px;
+	line-height: 140px;
+	text-align: center;
+}
