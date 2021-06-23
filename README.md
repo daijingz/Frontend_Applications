@@ -9,6 +9,9 @@ This program is a series of programs using web programming languages. Some of th
 * If a folder includes a license, it means it is an imported repository (not my work, just used for learning).
 * If a folder does not contain a license, it is my own developed work (Ideas may from other places).
 * To see all works' explanations and  **Documentation** folder (https://github.com/daijingz/Web-Programming-Applications/tree/main/Documentation)
+* To see all early applications about Node.js and React.js please visit these 2 directories:
+1. https://github.com/daijingz/Web-Programming-Applications/tree/main/Node.js
+2. https://github.com/daijingz/Web-Programming-Applications/tree/main/React.js
 
 This project has used:
 * Regular web programming tools: **HTML, CSS and JavaScript**
