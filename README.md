@@ -18,7 +18,7 @@ This project has used:
 * **React.js and Node.js** advanced libraries (Have learnt a lot and works are coming)
 
 # Contact
-daij24@mcmaster.ca
-(preferred)
-
-david1147062956@163.com
+**Preferred Email**: daij24@mcmaster.ca
+**Email**: david1147062956@163.com
+**Linkedin Account**: https://www.linkedin.com/in/jingze-dai/
+**Github Account**: https://github.com/daijingz 
