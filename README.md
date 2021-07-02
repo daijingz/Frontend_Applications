@@ -20,5 +20,6 @@ This project has used:
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
 **Email**: david1147062956@163.com
+
 **Linkedin Account**: https://www.linkedin.com/in/jingze-dai/
 **Github Account**: https://github.com/daijingz 
