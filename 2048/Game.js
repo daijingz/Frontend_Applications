@@ -15,6 +15,8 @@ var arr_now = [
 function restart() {
 	if(confirm("Do you want to restart it?")) {
 		newGame();
+	} else {
+		window.close();
 	}
 }
 window.onload = function() {
