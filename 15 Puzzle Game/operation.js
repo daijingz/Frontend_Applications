@@ -1,7 +1,7 @@
 var size = 4;
 var numbers = [];
 
-function createTable() {
+function Board() {
     initialize();
     const board = document.createElement("table");
     board.id = "15puzzle";
