@@ -13,10 +13,10 @@ This program is a series of programs using web programming languages. Some of th
 1. https://github.com/daijingz/Web-Programming-Applications/tree/main/Node.js
 2. https://github.com/daijingz/Web-Programming-Applications/tree/main/React.js
 
-This project has used:
+**USED techniques, programming languages and tools**
 * Regular web programming tools: **HTML, CSS and JavaScript**
 * **React.js and Node.js** advanced libraries (Have learnt a lot and works are coming)
-* Other tools (git, and git bash)
+* git, and git bash
 
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
