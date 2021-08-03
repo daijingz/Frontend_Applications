@@ -1,7 +1,7 @@
 # Web-Programming-Applications
 Web applications and interesting programs
 
-Websites current total 0 lines
+Websites current total **0** lines
 
 Minigames current total **1248** lines
 
