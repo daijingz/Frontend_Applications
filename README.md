@@ -1,5 +1,5 @@
 # Web-Programming-Applications
-Web applications and interesting programs
+Web applications, web-based games and other interesting programs
 
 Websites current total **0** lines
 
