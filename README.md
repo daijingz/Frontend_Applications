@@ -22,7 +22,7 @@ This program is a series of programs using web programming languages. Some of th
 * git, and git bash
 
 # Help center
-
+https://sites.google.com/view/projecthelpcenter/home
 
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
