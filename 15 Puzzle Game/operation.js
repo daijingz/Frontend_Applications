@@ -1,5 +1,12 @@
 var size = 4;
 var numbers = [];
+var input = 3;
+
+function isValidInput() {
+	if (input > 2 && input <= 5){
+		size = input;
+	}
+}
 
 function Board() {
     initialize();
