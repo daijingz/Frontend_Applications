@@ -25,7 +25,7 @@ https://sites.google.com/view/projecthelpcenter/home
 
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
-**Email**: david1147062956@163.com
+**Email**: david1147062956@gmail.com
 
 **Linkedin Account**: https://www.linkedin.com/in/jingze-dai/
 **Github Account**: https://github.com/daijingz 
