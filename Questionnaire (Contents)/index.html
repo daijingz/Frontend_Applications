@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire: How can Jingze improve his works?</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Questionnaire Form</h1>
+	<p>Jingze Dai, david1147062956@gmail.com</p>
+    <p>Please fill out this form with the required information</p>
+    <form action='david1147062956@gmail.com'>
+      <fieldset>
+		<h3>Personal Information (Page 1)</h3>
+        <label>Enter Your First Name: <input type="text" name="first-name" required /></label>
+        <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
+		<p class="hint">How can I call you?</p>
+		<label>Enter Your Preferable Name: <input type="text" name="prefer-name" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" required /></label>
+        <label>Enter Your Telephone Number: <input type="tel" name="tel" pattern="[0-9]{8,12}" required /></label>
+      </fieldset>
+      <fieldset>
+		<h3>Personal Information (Page 2)</h3>
+		<p class="hint">Are you from any one of the Canadian universities? (e.g., McMaster University, University of Toronto)</p>
+        <label><input type="radio" name="fromCA" class="inline" /> Yes</label>
+        <label><input type="radio" name="fromCA" class="inline" /> No</label>
+		
+		<p class="hint">What are your intentions?</p>
+		<label>
+          <input type="checkbox" name="terms" class="inline" required />Discuss interesting programming ideas</a>
+			  </label>
+		<label>
+          <input type="checkbox" name="terms" class="inline" required />Provide useful resourses</a>
+			  </label>
+		<label>
+          <input type="checkbox" name="terms" class="inline" required />Seeking for programming help or collaborations</a>
+			  </label>
+		<label>
+          <input type="checkbox" name="terms" class="inline" required />Discuss Academic Research Works</a>
+			  </label>
+		<label>
+          <input type="checkbox" name="terms" class="inline" required />Finding a Friend</a>
+			  </label>
+			  
+		<label>Upload your resume: <input type="file" name="file" /></label>
+		
+		<label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="I like coding with friends..."></textarea>
+			  </label>
+		
+		<label>How did you hear about me?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Linkedin Webpage</option>
+            <option value="2">Github Repository</option>
+            <option value="3">Personal Websites</option>
+			<option value="4">Campus Activities</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+			  
+      </fieldset>
+      <fieldset>
+		<h3>Github Performance</h3>
+        <p class="hint">Are you satisfied with my github works?</p>
+        <label><input type="radio" name="issatisfiedGH" class="inline" /> Yes</label>
+        <label><input type="radio" name="issatisfiedGH" class="inline" /> No</label>
+		
+		<p class="hint">In your opinion, what is the performance of the repository "Algorithms-and-Designs"?</p>
+		<label><input type="radio" name="perforAD" class="inline" /> Extremely Poor</label>
+        <label><input type="radio" name="perforAD" class="inline" /> Somewhat Poor</label>
+		<label><input type="radio" name="perforAD" class="inline" /> Neutral</label>
+		<label><input type="radio" name="perforAD" class="inline" /> Somewhat Good</label>
+        <label><input type="radio" name="perforAD" class="inline" /> Extremely Good</label>
+
+		<p class="hint">In your opinion, what is the performance of the repository "Web-Programming-Applications"?</p>
+		<label><input type="radio" name="perforWPA" class="inline" /> Extremely Poor</label>
+        <label><input type="radio" name="perforWPA" class="inline" /> Somewhat Poor</label>
+		<label><input type="radio" name="perforWPA" class="inline" /> Neutral</label>
+		<label><input type="radio" name="perforWPA" class="inline" /> Somewhat Good</label>
+        <label><input type="radio" name="perforWPA" class="inline" /> Extremely Good</label>
+
+      </fieldset>
+      <fieldset>
+        <label>How did you hear about me?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Linkedin Webpage</option>
+            <option value="2">Github Repository</option>
+            <option value="3">Personal Websites</option>
+			<option value="4">Campus Activities</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
