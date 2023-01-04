@@ -1,0 +1,13 @@
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\netcoreapp2.1\BirdBirdNet.deps.json
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\netcoreapp2.1\BirdBirdNet.runtimeconfig.json
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\netcoreapp2.1\BirdBirdNet.runtimeconfig.dev.json
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\netcoreapp2.1\BirdBirdNet.dll
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\netcoreapp2.1\BirdBirdNet.pdb
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.AssemblyInfoInputs.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.AssemblyInfo.cs
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.dll
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.pdb
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\netcoreapp2.1\BirdBirdNet.genruntimeconfig.cache

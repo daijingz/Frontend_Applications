@@ -1,0 +1,11 @@
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\net4.7.2\BirdBirdNet.exe.config
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\net4.7.2\BirdBirdNet.exe
+C:\Users\david\Desktop\BirdBirdNet\bin\Debug\net4.7.2\BirdBirdNet.pdb
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.csproj.SuggestedBindingRedirects.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.AssemblyInfoInputs.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.AssemblyInfo.cs
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.exe
+C:\Users\david\Desktop\BirdBirdNet\obj\Debug\net4.7.2\BirdBirdNet.pdb
