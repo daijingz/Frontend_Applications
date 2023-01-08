@@ -6,6 +6,7 @@ class GUI6 extends JFrame{
     // Exit Page (When there are some errors detected)
     public void exit_Page(){
         JFrame frame0 = new JFrame("Exit...");
+        frame0.setResizable(false);
 
         JLabel head1 = new JLabel();
         ImageIcon brandIcon = new ImageIcon("C:\\Users\\david\\IdeaProjects\\desktopApp\\src\\icon_brand.png");
@@ -38,7 +39,7 @@ class GUI6 extends JFrame{
         JLabel head5 = new JLabel();
         ImageIcon brandLing = new ImageIcon("C:\\Users\\david\\IdeaProjects\\desktopApp\\src\\icon_language.png");
         Image brand1 = brandLing.getImage();
-        brand1 = brand1.getScaledInstance(60, 60,  java.awt.Image.SCALE_SMOOTH);
+        brand1 = brand1.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH);
         brandLing = new ImageIcon(brand1);
         head5.setIcon(brandLing);
         Dimension size1 = head5.getPreferredSize();
@@ -54,6 +55,7 @@ class GUI6 extends JFrame{
     public void Login_Page(Database Db1){
         // Homepage Frame
         JFrame frame1 = new JFrame("Bank of CS - Login Page");
+        frame1.setResizable(false);
 
         // Choice for signing up
         JRadioButton radioButton1 = new JRadioButton("I have a Debit Card");
@@ -206,7 +208,11 @@ class GUI6 extends JFrame{
             } else {
                 label4.setForeground(new Color(0, 255, 0));
                 label4.setText("Processing...");
-                Registration.scene3();
+                if (radioButton1.isSelected()){
+                    Registration.scene3();
+                } else if (radioButton2.isSelected()){
+                    Registration.scene4();
+                }
             }
         };
 
