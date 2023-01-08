@@ -49,15 +49,13 @@ class Accounts extends JFrame{
         frame2.add(head3);
 
         //Language Option Brand
-        JLabel head4 = new JLabel();
         ImageIcon brandLing = new ImageIcon("C:\\Users\\david\\IdeaProjects\\desktopApp\\src\\icon_language.png");
-        Image brand3 = brandLing.getImage();
-        brand3 = brand3.getScaledInstance(60, 60,  java.awt.Image.SCALE_SMOOTH);
-        brandLing = new ImageIcon(brand3);
-        head4.setIcon(brandLing);
-        Dimension size3 = head4.getPreferredSize();
-        head4.setBounds(700, 30, size3.width, size3.height);
-        frame2.add(head4);
+        Image brand1 = brandLing.getImage();
+        brand1 = brand1.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH);
+        brandLing = new ImageIcon(brand1);
+        JButton button_ling = new JButton(brandLing);
+        button_ling.setBounds(720, 20, 50, 50);
+        frame2.add(button_ling);
 
         LocalTime timeObj = LocalTime.now();
         JLabel head5 = new JLabel();

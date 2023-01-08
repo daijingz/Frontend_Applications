@@ -36,15 +36,14 @@ class GUI6 extends JFrame{
         head4.setForeground(new java.awt.Color(255, 52, 255));
         frame0.add(head4);
 
-        JLabel head5 = new JLabel();
+        //Language Option Brand
         ImageIcon brandLing = new ImageIcon("C:\\Users\\david\\IdeaProjects\\desktopApp\\src\\icon_language.png");
         Image brand1 = brandLing.getImage();
         brand1 = brand1.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH);
         brandLing = new ImageIcon(brand1);
-        head5.setIcon(brandLing);
-        Dimension size1 = head5.getPreferredSize();
-        head5.setBounds(700, 30, size1.width, size1.height);
-        frame0.add(head5);
+        JButton button_ling = new JButton(brandLing);
+        button_ling.setBounds(720, 20, 50, 50);
+        frame0.add(button_ling);
 
         frame0.setSize(800,800);
         frame0.setLayout(null);
@@ -262,18 +261,32 @@ class GUI6 extends JFrame{
         hyperlink.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         hyperlink.setForeground(Color.BLUE.darker());
         hyperlink.setBounds(95,710, 600,40);
+        hyperlink.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e){
+                Protection.scene_protection_policy();
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e){
+                hyperlink.setForeground(Color.PINK.darker());
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e){
+                hyperlink.setForeground(Color.BLUE.darker());
+            }
+        });
         frame1.add(hyperlink);
 
         //Language Option Brand
-        JLabel head10 = new JLabel();
         ImageIcon brandLing = new ImageIcon("C:\\Users\\david\\IdeaProjects\\desktopApp\\src\\icon_language.png");
-        Image brand3 = brandLing.getImage();
-        brand3 = brand3.getScaledInstance(60, 60,  java.awt.Image.SCALE_SMOOTH);
-        brandLing = new ImageIcon(brand3);
-        head10.setIcon(brandLing);
-        Dimension size3 = head10.getPreferredSize();
-        head10.setBounds(700, 30, size3.width, size3.height);
-        frame1.add(head10);
+        Image brand1 = brandLing.getImage();
+        brand1 = brand1.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH);
+        brandLing = new ImageIcon(brand1);
+        JButton button_ling = new JButton(brandLing);
+        button_ling.setBounds(720, 20, 50, 50);
+        frame1.add(button_ling);
 
         frame1.setSize(800,800);
         frame1.setLayout(null);
