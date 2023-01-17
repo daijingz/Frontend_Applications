@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sNQxWPGKzVJbyZ7eXW9a9xPpr5esgUK386Ei1uHR22y0NeAGYbMrn5Owhoz70raLD/DC5ti7Q6j/6x0hUP3TKA==",
+  "dgSpecHash": "WdK39HI5leaWqzRRhaXj6z6cuB2Nn43T5Hzwmcbvj1M0k0pkQG1vdULtCjgorUL19zdhajqE23neKCn2WKo17g==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\Desktop\\BirdBirdNet\\BirdBirdNet.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
