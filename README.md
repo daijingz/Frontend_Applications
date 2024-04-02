@@ -25,7 +25,7 @@ This program is a series of programs using web programming languages. Some of th
 # Transferred NorthAmericaTourism Website (AVAILABLE)
 https://sites.google.com/view/northamericatourism/home
 
-# BirdBirdNet
+# BirdBirdNet (Pending)
 https://daijingz.github.io/BirdBirdNet/#updates
 
 # Help center
