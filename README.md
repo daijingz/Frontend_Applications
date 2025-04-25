@@ -1,35 +1,178 @@
-# FrontEnd-Applications (Actively Updating Now)
-Web applications, web-based games and other interesting program
+[![Commits][commits-shield]][commits-url]
+[![Programs][programs-shield]][programs-url]
+[![Lines][lines-shield]][lines-url]
+[![Application Projects][apps-shield]][apps-url]
+[![All Programs Pass Tests][appt-shield]][appt-url]
+[![All Applications Contains Documentations][aacd-shield]][aacd-url]
+[![Actively Updating][au-shield]][au-url]
 
-This program is a series of programs using web programming languages. Some of them are learnt (not inherit any codes from elsewhere, just learn how each part is working and write independent programming coding work in my own program) from online tutorials, developed licensed projects and courses.
+<!-- PROJECT LOGO -->
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="vertical-align: middle;">
+      <img src="icon.png" alt="Logo" width="80" height="80" style="background-color: white;" />
+    </td>
+    <td style="vertical-align: middle; padding-left: 15px;">
+      <h3 style="margin: 0;">FrontEnd Project Family</h3>
+    </td>
+  </tr>
+</table>
 
-**New Updates**
-1. Jan 3rd: Add a desktop app for a mockup bank. See the repo "desktopApp/desktopApp". To run the file, you need to go to desktopApp/desktopApp.jar. Download this app to you desktop, then left click on it. (This bank app only has 3 accounts: try to use card number 1520298043025677 and password 1234567890 to login)
-2. Jan 4th: Add a desktop app for a food club "BirdBirdNet".
-3. Jan 16th: Add functionalities to the CS Bank desktop app. visit desktop.jar to see its functions. Download and open it in your computer.
+<p align="left">
+  This project family includes popular algorithms' multi-language implementations programs and their applications on real-life software artifacts. Each algorithm group has several algorithms solving the same problem, and here, each algorithm has one program executing independently. Those similar algorithms are placed in the same module. Unit testing covers all implementations to ensure their execution reliability, and application projects apply these implementations in their designated places. Documentation aims to indicate main confusion places.
+</p>
 
-# Documentation
-* If a folder includes a license, it means it is an imported repository (not my work, just used for learning).
-* If a folder does not contain a license, it is my own developed work (Ideas may from other places).
-* To see all works' explanations and  **Documentation** folder (https://github.com/daijingz/Web-Programming-Applications/tree/main/Documentation)
-* To see all early applications about Node.js and React.js please visit these 2 directories:
-1. https://github.com/daijingz/Web-Programming-Applications/tree/main/Node.js
-2. https://github.com/daijingz/Web-Programming-Applications/tree/main/React.js
+[![Python][python-shield]][python-url]
+[![Java][java-shield]][java-url]
+[![C++][cpp-shield]][cpp-url]
+[![C][c-shield]][c-url]
+[![C#][csharp-shield]][csharp-url]
+[![JavaScript][js-shield]][js-url]
+[![TypeScript][ts-shield]][ts-url]
+[![Swift][swift-shield]][swift-url]
+[![Go][go-shield]][go-url]
+[![Scala][scala-shield]][scala-url]
+
+[![JSON][json-shield]][json-url]
+[![MongoDB][mdb-shield]][mdb-url]
+[![pytest][pytest-shield]][pytest-url]
+[![junit][junit-shield]][junit-url]
+[![matlab][matlab-shield]][matlab-url]
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#folder-structures-and-file-contents">Folder Structures and File Contents</a></li>
+  </ol>
+</details>
 
 
-**USED techniques, programming languages and tools**
-* Regular web programming tools: **HTML, CSS and JavaScript**
-* **React.js and Node.js** advanced libraries (Have learnt a lot and works are coming)
-* git, and git bash
 
-# Transferred NorthAmericaTourism Website (AVAILABLE)
-https://sites.google.com/view/northamericatourism/home
+<!-- ABOUT THE PROJECT -->
+## About The Project
+![alt text](Structure.jpeg)
 
-# BirdBirdNet (Pending)
-https://daijingz.github.io/BirdBirdNet/#updates
+Recent software development largely depends on algorithms since outstanding algorithms have such benefits:
 
-# Help center
-https://sites.google.com/view/projecthelpcenter/home
+- [x] Considerably reduce calculation resource costs (less time and low system utilization).
+- [x] Increase the whole system's reliability and robustness.
+- [x] Improve program compatibility in diverse and distinct environments.
+
+<br>
+
+Here is the structure of this project series:
+
+![alt text](Architecture.jpeg)
+
+**This project family includes those parts**
+
+:open_mouth: **Algorithm implementations** (Implementations of algorithms on multiple programming languages)
+
+:smile: **Algorithm-based Application programs** (Software artifacts with algorithms' applications)
+
+:grimacing: **Documentations** (Files that explain algorithm designs, mainly **_.ipynb_** and **_.md_** files)
+
+:blush: **Mathematical proofs** (Less frequently occurring, usually for evaluating algorithms' time complexity)
+
+:smiley: **Testing** (Ensuring each program has good, expected performance)
+
+There are a lot of sub-projects that have not been uploaded, please give the author more time.
+
+<p align="right">
+  <a href="#top">
+    <img alt="Back To Top" src="https://img.shields.io/badge/Back_To_Top-black">
+  </a>
+</p>
+
+<!-- CONTACT -->
+## Contact
+
+**Personal Email Address** - david1147062956@gmail.com
+
+Research Email Address - dai.jingze@icloud.com
+
+Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info](https://sites.google.com/view/jingzedaiinfo/personal-info)
+
+<p align="right">
+  <a href="#top">
+    <img alt="Back To Top" src="https://img.shields.io/badge/Back_To_Top-black">
+  </a>
+</p>
+
+## Folder Structures and File Contents
+
+**Applications**
+  - Application projects applying included algorithms
+
+**Documentation**
+  - Documentation showing 
+
+**Module {X}: {Y}**
+  - groups of algorithms separated by their solved problems Y
+
+**Testing**
+  - Unit testing files
+
+README.md
+  - This file
+
+<p align="right">
+  <a href="#top">
+    <img alt="Back To Top" src="https://img.shields.io/badge/Back_To_Top-black">
+  </a>
+</p>
+
+[commits-shield]: https://img.shields.io/badge/Commits->4k-blue
+[commits-url]: https://github.com/daijingz/Algorithm_Implementations/commits/main/
+[programs-shield]: https://img.shields.io/badge/Sub_Projects->80-green
+[programs-url]: https://github.com/daijingz/Algorithm_Implementations
+[lines-shield]: https://img.shields.io/badge/Total_Lines->9300-cyan
+[lines-url]: https://github.com/daijingz/Algorithm_Implementations
+[apps-shield]: https://img.shields.io/badge/Application_Projects-4-yellow
+[apps-url]: https://github.com/daijingz/Algorithm_Implementations/tree/main/Applications
+[appt-shield]: https://img.shields.io/badge/All_Programs_Verified_By_Tests-purple
+[appt-url]: https://github.com/daijingz/Algorithm_Implementations/tree/main/Testing
+[aacd-shield]: https://img.shields.io/badge/All_Applications_Contain_Documentations-orange
+[aacd-url]: https://github.com/daijingz/Algorithm_Implementations/tree/main/Documentation
+[au-shield]: https://img.shields.io/badge/Actively_Updating-darkred
+[au-url]: https://www.linkedin.com/in/jingze-dai/
+
+[python-shield]: https://img.shields.io/badge/Python-blue
+[python-url]: https://www.python.org/
+[java-shield]: https://img.shields.io/badge/Java-orange
+[java-url]: https://www.java.com/en/
+[cpp-shield]: https://img.shields.io/badge/C++-pink
+[cpp-url]: https://docs.microsoft.com/en-us/cpp/?view=msvc-170
+[c-shield]: https://img.shields.io/badge/C-yellow
+[c-url]: https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170
+[csharp-shield]: https://img.shields.io/badge/CSharp-green
+[csharp-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
+[js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
+[js-url]: https://devdocs.io/javascript/
+[ts-shield]: https://img.shields.io/badge/TypeScript-lightblue
+[ts-url]: https://devdocs.io/typescript/
+[swift-shield]: https://img.shields.io/badge/Swift-purple
+[swift-url]: https://devdocs.io/swift/
+[go-shield]: https://img.shields.io/badge/Go-brown
+[go-url]: https://devdocs.io/go/
+[scala-shield]: https://img.shields.io/badge/Scala-lightgreen
+[scala-url]: https://devdocs.io/scala/
+
+[json-shield]: https://img.shields.io/badge/JSON-grey
+[json-url]: https://www.json.org/json-en.html
+[mdb-shield]: https://img.shields.io/badge/MongoDB-darkgreen
+[mdb-url]: https://www.mongodb.com/
+[pytest-shield]: https://img.shields.io/badge/pytest-skyblue
+[pytest-url]: https://docs.pytest.org/en/stable/
+[junit-shield]: https://img.shields.io/badge/JUnit-lightorange
+[junit-url]: https://junit.org/junit5/
+[matlab-shield]: https://img.shields.io/badge/MATLAB-darkblue
+[matlab-url]: https://www.mathworks.com/products/matlab.html
 
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
