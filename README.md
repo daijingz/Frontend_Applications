@@ -19,7 +19,7 @@
 </table>
 
 <p align="left">
-  This project family contains front-end applications, including websites, web programs, cookies, desktop apps, mobile apps, and web-based functions. All web programs have a 
+  This project family contains front-end applications, including websites, web programs, cookies, desktop apps, mobile apps, and web-based functions. All web programs have an independent folder.
 </p>
 
 [![Python][python-shield]][python-url]
