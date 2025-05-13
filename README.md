@@ -19,7 +19,7 @@
 </table>
 
 <p align="left">
-  This project family contains front-end applications, including websites, web programs, cookies, desktop apps, mobile apps, and web-based functions. All web projects have an independent folder, which contains all files and a README.md explaining basic contributions. All projects have execution guides.
+  This project family contains front-end applications, including websites, web programs, cookies, desktop apps, mobile apps, and web-based functions. All web projects have an independent folder, which contains all files and a README.md explaining basic contributions. All projects have execution guides, including.
 </p>
 
 [![Python][python-shield]][python-url]
