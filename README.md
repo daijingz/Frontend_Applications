@@ -19,9 +19,7 @@
 </table>
 
 <p align="left">
-  This project family contains front-end applications, including websites, web programs, cookies, desktop apps, mobile apps, and web-based functions. All web projects have an independent folder, which contains all files and a README.md explaining basic contributions. All projects have execution guides in their README.md file.
-
-  All files from my personal portfolio website will not be included here since they are in an independent repository. Yes, there are a lot of projects under
+  This project family encompasses front-end applications, including websites, web applications, cookies, desktop applications, mobile applications, and web-based functions. All web projects have an independent folder that contains all files and a README.md file explaining the project's main functionalities and corresponding environments.
 </p>
 
 [![Python][python-shield]][python-url]
