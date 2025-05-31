@@ -1,6 +1,5 @@
 [![Programs][programs-shield]][programs-url]
 [![Lines][lines-shield]][lines-url]
-[![Application Projects][apps-shield]][apps-url]
 [![All Programs Pass Tests][appt-shield]][appt-url]
 [![All Applications Contains Documentations][aacd-shield]][aacd-url]
 [![Actively Updating][au-shield]][au-url]
@@ -130,12 +129,10 @@ README.md
 
 [commits-shield]: https://img.shields.io/badge/Commits->4k-blue
 [commits-url]: https://github.com/daijingz/Algorithm_Implementations/commits/main/
-[programs-shield]: https://img.shields.io/badge/Sub_Projects->80-green
+[programs-shield]: https://img.shields.io/badge/Sub_Projects-13-green
 [programs-url]: https://github.com/daijingz/Algorithm_Implementations
 [lines-shield]: https://img.shields.io/badge/Total_Lines->9300-cyan
 [lines-url]: https://github.com/daijingz/Algorithm_Implementations
-[apps-shield]: https://img.shields.io/badge/Application_Projects-4-yellow
-[apps-url]: https://github.com/daijingz/Algorithm_Implementations/tree/main/Applications
 [appt-shield]: https://img.shields.io/badge/All_Programs_Verified_By_Tests-purple
 [appt-url]: https://github.com/daijingz/Algorithm_Implementations/tree/main/Testing
 [aacd-shield]: https://img.shields.io/badge/All_Applications_Contain_Documentations-orange
