@@ -1,4 +1,3 @@
-[![Commits][commits-shield]][commits-url]
 [![Programs][programs-shield]][programs-url]
 [![Lines][lines-shield]][lines-url]
 [![Application Projects][apps-shield]][apps-url]
