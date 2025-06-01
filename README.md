@@ -126,7 +126,7 @@ README.md
   </a>
 </p>
 
-[progs-shield]: https://img.shields.io/badge/Total Programs->110-blue
+[progs-shield]: https://img.shields.io/badge/Total_Programs->110-blue
 [progs-url]: https://github.com/daijingz/Algorithm_Implementations/commits/main/
 [projects-shield]: https://img.shields.io/badge/Sub_Projects-13-green
 [projects-url]: https://github.com/daijingz/Algorithm_Implementations
