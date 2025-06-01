@@ -17,9 +17,8 @@
 </table>
 
 <p align="left">
-  This project family encompasses front-end applications, including websites, web applications, cookies, desktop applications, mobile applications, and web-based functions. All web projects have an independent folder that contains all files and a README.md file explaining the project's main functionalities and corresponding environments.
+  This project family encompasses front-end applications, including websites, web applications, cookies, desktop applications, mobile applications, and web-based functions. Each web project has an independent folder that contains all files and a README.md file explaining the project's main functionalities and corresponding environments.
 
-  Utilized emergent techniques: 
 </p>
 
 [![Python][python-shield]][python-url]
