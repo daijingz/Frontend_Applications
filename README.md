@@ -103,12 +103,6 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
 
 ## Folder Structures and File Contents
 
-**Applications**
-  - Application projects applying included algorithms
-
-**Documentation**
-  - Documentation showing 
-
 **Module {X}: {Y}**
   - groups of algorithms separated by their solved problems Y
 
