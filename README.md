@@ -3,6 +3,7 @@
 [![Actively Updating][au-shield]][au-url]
 [![Active Website Projects][awp-shield]][awp-url]
 [![Database Applied][da-shield]][da-url]
+[![With_Human_Interactions][whi-shield]][whi-url]
 
 <!-- PROJECT LOGO -->
 <table border="0" cellspacing="0" cellpadding="0">
@@ -125,6 +126,8 @@ README.md
 [awp-url]: https://www.linkedin.com/in/jingze-dai/
 [da-shield]: https://img.shields.io/badge/Database_Applied-lightyellow
 [da-url]: https://github.com/daijingz/Frontend_Applications
+[whi-shield]: https://img.shields.io/badge/With_Human_Interactions-purple
+[whi-url]: https://github.com/daijingz/Frontend_Applications
 
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
 [js-url]: https://devdocs.io/javascript/
