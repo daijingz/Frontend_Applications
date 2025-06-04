@@ -32,9 +32,9 @@
 [![iOS][ios-shield]][ios-url]
 
 [![Kotlin][kl-shield]][kl-url]
+[![React.js][react-shield]][react-url]
 [![JSON][json-shield]][json-url]
 [![MongoDB][mdb-shield]][mdb-url]
-[![pytest][pytest-shield]][pytest-url]
 [![junit][junit-shield]][junit-url]
 [![matlab][matlab-shield]][matlab-url]
 
@@ -152,6 +152,8 @@ README.md
 
 [kl-shield]: https://img.shields.io/badge/Kotlin-purple
 [kl-url]: https://kotlinlang.org/docs/home.html#
+[react-shield]: https://img.shields.io/badge/React.js-skyblue
+[react-url]: https://react.dev/
 [json-shield]: https://img.shields.io/badge/JSON-grey
 [json-url]: https://www.json.org/json-en.html
 [mdb-shield]: https://img.shields.io/badge/MongoDB-darkgreen
