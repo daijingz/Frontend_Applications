@@ -31,6 +31,7 @@
 [![Android][and-shield]][and-url]
 [![iOS][ios-shield]][ios-url]
 
+[![Kotlin][kl-shield]][kl-url]
 [![JSON][json-shield]][json-url]
 [![MongoDB][mdb-shield]][mdb-url]
 [![pytest][pytest-shield]][pytest-url]
@@ -149,6 +150,8 @@ README.md
 [ios-shield]: https://img.shields.io/badge/iOS-darkcyan
 [ios-url]: https://developer.apple.com/documentation/
 
+[kl-shield]: https://img.shields.io/badge/Kotlin-purple
+[kl-url]: https://kotlinlang.org/docs/home.html#
 [json-shield]: https://img.shields.io/badge/JSON-grey
 [json-url]: https://www.json.org/json-en.html
 [mdb-shield]: https://img.shields.io/badge/MongoDB-darkgreen
