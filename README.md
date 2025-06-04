@@ -19,11 +19,6 @@
 
 </p>
 
-[![Python][python-shield]][python-url]
-[![Java][java-shield]][java-url]
-[![C++][cpp-shield]][cpp-url]
-[![C][c-shield]][c-url]
-[![C#][csharp-shield]][csharp-url]
 [![JavaScript][js-shield]][js-url]
 [![TypeScript][ts-shield]][ts-url]
 [![Swift][swift-shield]][swift-url]
@@ -125,16 +120,6 @@ README.md
 [au-shield]: https://img.shields.io/badge/Actively_Updating-darkred
 [au-url]: https://www.linkedin.com/in/jingze-dai/
 
-[python-shield]: https://img.shields.io/badge/Python-blue
-[python-url]: https://www.python.org/
-[java-shield]: https://img.shields.io/badge/Java-orange
-[java-url]: https://www.java.com/en/
-[cpp-shield]: https://img.shields.io/badge/C++-pink
-[cpp-url]: https://docs.microsoft.com/en-us/cpp/?view=msvc-170
-[c-shield]: https://img.shields.io/badge/C-yellow
-[c-url]: https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170
-[csharp-shield]: https://img.shields.io/badge/CSharp-green
-[csharp-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
 [js-url]: https://devdocs.io/javascript/
 [ts-shield]: https://img.shields.io/badge/TypeScript-lightblue
