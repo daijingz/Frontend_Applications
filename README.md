@@ -120,7 +120,7 @@ README.md
 [projects-url]: https://github.com/daijingz/Algorithm_Implementations
 [au-shield]: https://img.shields.io/badge/Actively_Updating-darkred
 [au-url]: https://www.linkedin.com/in/jingze-dai/
-[awp-shield]: https://img.shields.io/badge/Actively_Updating-green
+[awp-shield]: https://img.shields.io/badge/Active_Websites-green
 [awp-url]: https://www.linkedin.com/in/jingze-dai/
 
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
