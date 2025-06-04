@@ -22,11 +22,14 @@
 
 </p>
 
+[![HTML][html-shield]][html-url]
+[![CSS][css-shield]][css-url]
 [![JavaScript][js-shield]][js-url]
 [![TypeScript][ts-shield]][ts-url]
-[![Swift][swift-shield]][swift-url]
-[![Go][go-shield]][go-url]
-[![Scala][scala-shield]][scala-url]
+[![.NET][dotnet-shield]][dotnet-url]
+[![Angular][ang-shield]][ang-url]
+[![Android][and-shield]][and-url]
+[![iOS][ios-shield]][ios-url]
 
 [![JSON][json-shield]][json-url]
 [![MongoDB][mdb-shield]][mdb-url]
@@ -124,21 +127,27 @@ README.md
 [au-url]: https://www.linkedin.com/in/jingze-dai/
 [awp-shield]: https://img.shields.io/badge/Active_Websites-green
 [awp-url]: https://www.linkedin.com/in/jingze-dai/
-[da-shield]: https://img.shields.io/badge/Database_Applied-lightyellow
+[da-shield]: https://img.shields.io/badge/Database_Applied-yellow
 [da-url]: https://github.com/daijingz/Frontend_Applications
 [whi-shield]: https://img.shields.io/badge/With_Human_Interactions-purple
 [whi-url]: https://github.com/daijingz/Frontend_Applications
 
+[html-shield]: https://img.shields.io/badge/HTML-orange
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css-shield]: https://img.shields.io/badge/CSS-purple
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
 [js-url]: https://devdocs.io/javascript/
 [ts-shield]: https://img.shields.io/badge/TypeScript-lightblue
 [ts-url]: https://devdocs.io/typescript/
-[swift-shield]: https://img.shields.io/badge/Swift-purple
-[swift-url]: https://devdocs.io/swift/
-[go-shield]: https://img.shields.io/badge/Go-brown
-[go-url]: https://devdocs.io/go/
-[scala-shield]: https://img.shields.io/badge/Scala-pink
-[scala-url]: https://devdocs.io/scala/
+[dotnet-shield]: https://img.shields.io/badge/.NET-pink
+[dotnet-url]: https://learn.microsoft.com/en-us/dotnet/
+[ang-shield]: https://img.shields.io/badge/Angular-darkred
+[ang-url]: https://angular.dev/overview
+[and-shield]: https://img.shields.io/badge/Andriod-lightorange
+[and-url]: https://developer.android.com/develop
+[ios-shield]: https://img.shields.io/badge/iOS-darkcyan
+[ios-url]: https://developer.apple.com/documentation/
 
 [json-shield]: https://img.shields.io/badge/JSON-grey
 [json-url]: https://www.json.org/json-en.html
