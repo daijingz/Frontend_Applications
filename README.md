@@ -1,6 +1,7 @@
 [![Sub-projects][projects-shield]][projects-url]
 [![Programs][progs-shield]][progs-url]
 [![Actively Updating][au-shield]][au-url]
+[![Active Website Projects][awp-shield]][awp-url]
 
 <!-- PROJECT LOGO -->
 <table border="0" cellspacing="0" cellpadding="0">
@@ -115,10 +116,12 @@ README.md
 
 [progs-shield]: https://img.shields.io/badge/Total_Programs->110-blue
 [progs-url]: https://github.com/daijingz/Algorithm_Implementations/commits/main/
-[projects-shield]: https://img.shields.io/badge/Sub_Projects-13-green
+[projects-shield]: https://img.shields.io/badge/Sub_Projects-13-lightgreen
 [projects-url]: https://github.com/daijingz/Algorithm_Implementations
 [au-shield]: https://img.shields.io/badge/Actively_Updating-darkred
 [au-url]: https://www.linkedin.com/in/jingze-dai/
+[awp-shield]: https://img.shields.io/badge/Actively_Updating-green
+[awp-url]: https://www.linkedin.com/in/jingze-dai/
 
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
 [js-url]: https://devdocs.io/javascript/
