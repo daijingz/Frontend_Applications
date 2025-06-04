@@ -2,6 +2,7 @@
 [![Programs][progs-shield]][progs-url]
 [![Actively Updating][au-shield]][au-url]
 [![Active Website Projects][awp-shield]][awp-url]
+[![Database Applied][da-shield]][da-url]
 
 <!-- PROJECT LOGO -->
 <table border="0" cellspacing="0" cellpadding="0">
@@ -122,6 +123,8 @@ README.md
 [au-url]: https://www.linkedin.com/in/jingze-dai/
 [awp-shield]: https://img.shields.io/badge/Active_Websites-green
 [awp-url]: https://www.linkedin.com/in/jingze-dai/
+[da-shield]: https://img.shields.io/badge/Database_Applied-lightyellow
+[da-url]: https://github.com/daijingz/Frontend_Applications
 
 [js-shield]: https://img.shields.io/badge/JavaScript-lightyellow
 [js-url]: https://devdocs.io/javascript/
@@ -131,7 +134,7 @@ README.md
 [swift-url]: https://devdocs.io/swift/
 [go-shield]: https://img.shields.io/badge/Go-brown
 [go-url]: https://devdocs.io/go/
-[scala-shield]: https://img.shields.io/badge/Scala-lightgreen
+[scala-shield]: https://img.shields.io/badge/Scala-pink
 [scala-url]: https://devdocs.io/scala/
 
 [json-shield]: https://img.shields.io/badge/JSON-grey
