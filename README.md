@@ -54,9 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![alt text](Structure.jpeg)
-
-Recent software development largely depends on algorithms since outstanding algorithms have such benefits:
+This project is a series of JIngze's FrontEnd projects, inlcuding:
 
 - [x] Considerably reduce calculation resource costs (less time and low system utilization).
 - [x] Increase the whole system's reliability and robustness.
