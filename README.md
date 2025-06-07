@@ -35,7 +35,8 @@
 [![React.js][react-shield]][react-url]
 [![ASP.NET][aspnet-shield]][aspnet-url]
 [![Node.js][nodejs-shield]][nodejs-url]
-[![junit][junit-shield]][junit-url]
+[![Next.js][nextjs-shield]][nextjs-url]
+[![REST APIs][restapi-shield]][restapi-url]
 [![matlab][matlab-shield]][matlab-url]
 
 <!-- TABLE OF CONTENTS -->
@@ -156,10 +157,10 @@ README.md
 [aspnet-url]: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-9.0
 [nodejs-shield]: https://img.shields.io/badge/Node.js-darkgreen
 [nodejs-url]: https://nodejs.org/docs/latest/api/
-[pytest-shield]: https://img.shields.io/badge/pytest-skyblue
-[pytest-url]: https://docs.pytest.org/en/stable/
-[junit-shield]: https://img.shields.io/badge/JUnit-lightorange
-[junit-url]: https://junit.org/junit5/
+[nextjs-shield]: https://img.shields.io/badge/Next.js-red
+[nextjs-url]: https://nextjs.org/
+[restapi-shield]: https://img.shields.io/badge/REST_APIs-lightorange
+[restapi-url]: https://docs.github.com/en/rest?apiVersion=2022-11-28
 [matlab-shield]: https://img.shields.io/badge/MATLAB-darkblue
 [matlab-url]: https://www.mathworks.com/products/matlab.html
 
