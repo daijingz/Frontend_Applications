@@ -105,13 +105,16 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
   </a>
 </p>
 
-## Contact
+## Folder Structures and File Contents
 
-**Personal Email Address** - david1147062956@gmail.com
+**Module {X}: {Y}**
+  - groups of algorithms separated by their solved problems Y
 
-Research Email Address - dai.jingze@icloud.com
+**Testing**
+  - Unit testing files
 
-Personal Portfolio - [https://daijingz.github.io/Jingze_Portfolio/index.html](https://daijingz.github.io/Jingze_Portfolio/index.html)
+README.md
+  - This file
 
 <p align="right">
   <a href="#top">
@@ -169,10 +172,3 @@ Personal Portfolio - [https://daijingz.github.io/Jingze_Portfolio/index.html](ht
 [swing-url]: https://www.geeksforgeeks.org/introduction-to-java-swing/
 [kub-shield]: https://img.shields.io/badge/Kubernetes-darkblue
 [kub-url]: https://kubernetes.io/docs/home/
-
-# Contact
-**Preferred Email**: daij24@mcmaster.ca
-**Email**: david1147062956@gmail.com
-
-**Linkedin Account**: https://www.linkedin.com/in/jingze-dai/
-**Github Account**: https://github.com/daijingz 
