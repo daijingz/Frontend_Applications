@@ -33,8 +33,8 @@
 
 [![Kotlin][kl-shield]][kl-url]
 [![React.js][react-shield]][react-url]
-[![JSON][json-shield]][json-url]
-[![MongoDB][mdb-shield]][mdb-url]
+[![ASP.NET][aspnet-shield]][aspnet-url]
+[![Node.js][nodejs-shield]][nodejs-url]
 [![junit][junit-shield]][junit-url]
 [![matlab][matlab-shield]][matlab-url]
 
@@ -152,10 +152,10 @@ README.md
 [kl-url]: https://kotlinlang.org/docs/home.html#
 [react-shield]: https://img.shields.io/badge/React.js-skyblue
 [react-url]: https://react.dev/
-[json-shield]: https://img.shields.io/badge/JSON-grey
-[json-url]: https://www.json.org/json-en.html
-[mdb-shield]: https://img.shields.io/badge/MongoDB-darkgreen
-[mdb-url]: https://www.mongodb.com/
+[aspnet-shield]: https://img.shields.io/badge/ASP.NET-grey
+[aspnet-url]: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-9.0
+[nodejs-shield]: https://img.shields.io/badge/Node.js-darkgreen
+[nodejs-url]: https://nodejs.org/docs/latest/api/
 [pytest-shield]: https://img.shields.io/badge/pytest-skyblue
 [pytest-url]: https://docs.pytest.org/en/stable/
 [junit-shield]: https://img.shields.io/badge/JUnit-lightorange
