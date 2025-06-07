@@ -37,6 +37,9 @@
 [![Node.js][nodejs-shield]][nodejs-url]
 [![Next.js][nextjs-shield]][nextjs-url]
 [![REST APIs][restapi-shield]][restapi-url]
+[![Flask][flask-shield]][flask-url]
+[![Django][django-shield]][django-url]
+[![Swing][swing-shield]][swing-url]
 [![Kubernetes][kub-shield]][kub-url]
 
 <!-- TABLE OF CONTENTS -->
@@ -161,6 +164,12 @@ README.md
 [nextjs-url]: https://nextjs.org/
 [restapi-shield]: https://img.shields.io/badge/REST_APIs-lightorange
 [restapi-url]: https://docs.github.com/en/rest?apiVersion=2022-11-28
+[flask-shield]: https://img.shields.io/badge/Flask-pink
+[flask-url]: https://flask.palletsprojects.com/en/stable/tutorial/
+[django-shield]: https://img.shields.io/badge/Django-darkred
+[django-url]: https://www.djangoproject.com/start/
+[swing-shield]: https://img.shields.io/badge/Swing-orange
+[swing-url]: https://www.geeksforgeeks.org/introduction-to-java-swing/
 [kub-shield]: https://img.shields.io/badge/Kubernetes-darkblue
 [kub-url]: https://kubernetes.io/docs/home/
 
