@@ -105,16 +105,13 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
   </a>
 </p>
 
-## Folder Structures and File Contents
+## Contact
 
-**Module {X}: {Y}**
-  - groups of algorithms separated by their solved problems Y
+**Personal Email Address** - david1147062956@gmail.com
 
-**Testing**
-  - Unit testing files
+Research Email Address - dai.jingze@icloud.com
 
-README.md
-  - This file
+Personal Portfolio - [https://daijingz.github.io/Jingze_Portfolio/index.html](https://daijingz.github.io/Jingze_Portfolio/index.html)
 
 <p align="right">
   <a href="#top">
