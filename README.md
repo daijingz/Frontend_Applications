@@ -37,7 +37,7 @@
 [![Node.js][nodejs-shield]][nodejs-url]
 [![Next.js][nextjs-shield]][nextjs-url]
 [![REST APIs][restapi-shield]][restapi-url]
-[![matlab][matlab-shield]][matlab-url]
+[![Kubernetes][kub-shield]][kub-url]
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -161,8 +161,8 @@ README.md
 [nextjs-url]: https://nextjs.org/
 [restapi-shield]: https://img.shields.io/badge/REST_APIs-lightorange
 [restapi-url]: https://docs.github.com/en/rest?apiVersion=2022-11-28
-[matlab-shield]: https://img.shields.io/badge/MATLAB-darkblue
-[matlab-url]: https://www.mathworks.com/products/matlab.html
+[kub-shield]: https://img.shields.io/badge/Kubernetes-darkblue
+[kub-url]: https://kubernetes.io/docs/home/
 
 # Contact
 **Preferred Email**: daij24@mcmaster.ca
