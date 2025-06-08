@@ -1,5 +1,5 @@
 # Jingze Portfolio Website Project
-Jingze's Portfolio website (A part of the front-end projects)
+Jingze's Portfolio website (A part of the [front-end project family](https://github.com/daijingz/Frontend_Applications))
 
 All files are stored in the `Jingze_Portfolio` repository.
 
