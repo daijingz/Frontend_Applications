@@ -90,8 +90,8 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
 
 ## Folder Structures and File Contents
 
-**{Y}**
-  - Independent projects.
+**{...}** 
+  - An independent front-end project. (Every repository is)
 
 README.md
   - This file
