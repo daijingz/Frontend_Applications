@@ -58,9 +58,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This project is a series of JIngze's FrontEnd projects, inlcuding:
+This project is a series of Jingze's FrontEnd projects, including:
 
-- [x] Considerably reduce calculation resource costs (less time and low system utilization).
+- [x] Considerably reduce calculation resource costs (less time and low system utilization).i
+- [x] Increase the whole system's reliability and robustness.
+- [x] Improve program compatibility in diverse and distinct environments.
+- [x] Considerably reduce calculation resource costs (less time and low system utilization).i
 - [x] Increase the whole system's reliability and robustness.
 - [x] Improve program compatibility in diverse and distinct environments.
 
