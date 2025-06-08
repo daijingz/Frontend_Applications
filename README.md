@@ -58,34 +58,14 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This project is a series of Jingze's FrontEnd projects, including:
+This project is a series of Jingze's front-end projects, mainly including:
 
-- [x] Considerably reduce calculation resource costs (less time and low system utilization).i
-- [x] Increase the whole system's reliability and robustness.
-- [x] Improve program compatibility in diverse and distinct environments.
-- [x] Considerably reduce calculation resource costs (less time and low system utilization).i
-- [x] Increase the whole system's reliability and robustness.
-- [x] Improve program compatibility in diverse and distinct environments.
-
-<br>
-
-Here is the structure of this project series:
-
-![alt text](Architecture.jpeg)
-
-**This project family includes those parts**
-
-:open_mouth: **Algorithm implementations** (Implementations of algorithms on multiple programming languages)
-
-:smile: **Algorithm-based Application programs** (Software artifacts with algorithms' applications)
-
-:grimacing: **Documentations** (Files that explain algorithm designs, mainly **_.ipynb_** and **_.md_** files)
-
-:blush: **Mathematical proofs** (Less frequently occurring, usually for evaluating algorithms' time complexity)
-
-:smiley: **Testing** (Ensuring each program has good, expected performance)
-
-There are a lot of sub-projects that have not been uploaded, please give the author more time to update.
+- [x] Websites, including one or more webpages.
+- [x] Independent web programs. 
+- [x] Web applications. (.NET or Angular)
+- [x] Desktop applications.
+- [x] Mobile applications.
+- [x] Cookies.
 
 <p align="right">
   <a href="#top">
@@ -110,11 +90,8 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
 
 ## Folder Structures and File Contents
 
-**Module {X}: {Y}**
-  - groups of algorithms separated by their solved problems Y
-
-**Testing**
-  - Unit testing files
+**{Y}**
+  - Independent projects.
 
 README.md
   - This file
