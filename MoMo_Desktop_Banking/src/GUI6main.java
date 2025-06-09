@@ -1,10 +1,17 @@
 import javax.sound.sampled.*;
 import javax.swing.*;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicReference;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.concurrent.atomic.AtomicReference;
 
 class GUI6 extends JFrame{
     // Exit Page (When there are some errors detected)
@@ -59,7 +66,7 @@ class GUI6 extends JFrame{
         frame0.add(head1);
 
         JLabel head2 = new JLabel("MoMo Bank");
-        head2.setBounds(70,15,200,30);
+        head2.setBounds(70,15,240,30);
         head2.setFont(new Font("Monaco", Font.BOLD, 36));
         head2.setForeground(new java.awt.Color(0, 42, 255));
         frame0.add(head2);
@@ -111,7 +118,7 @@ class GUI6 extends JFrame{
         Record Record2 = new Record("1502756788294430", "abc12345", "daij24");
         Record Record3 = new Record("1111222233334444", "qwer7890", "daijingz");
         Database Bank_Database = new Database(10, "MoMo Bank Database");
-        Bank_Database.add_Record_List(Record1, Record2, Record3);
+        Bank_Database.add_record_list(Record1, Record2, Record3);
 
         AtomicReference<String> soundName = new AtomicReference<>("src\\music\\CantinaBand60.wav");
         AtomicReference<AudioInputStream> audioInputStream = new AtomicReference<>(AudioSystem.getAudioInputStream(new File(String.valueOf(soundName)).getAbsoluteFile()));
@@ -211,7 +218,7 @@ class GUI6 extends JFrame{
 
         // Extract inputs and checks whether login inputs fulfils
         ActionListener actionListener1 = actionEvent -> {
-            if (radioButton3.isSelected()){
+            if (radioButton3.isSelected()) {
                 label5.setForeground(new Color(255, 125, 0));
                 label5.setText("Warning: Do not save in the public computers");
             } else {
@@ -221,37 +228,43 @@ class GUI6 extends JFrame{
 
             String tf_value_account = textfield1.getText();
             String tf_value_password = textfield2.getText();
+
             if (tf_value_account.length() == 0) {
                 label3.setForeground(new Color(255, 0, 0));
                 label3.setText("Error: Empty card number");
             } else if (tf_value_account.length() != 16) {
                 label3.setForeground(new Color(255, 0, 0));
                 label3.setText("Error: Card number length should be 16");
-            } else if (tf_value_password.length() > 0){
+            } else if (tf_value_password.length() == 0) {
+                label3.setForeground(new Color(255, 0, 0));
+                label3.setText("Error: Empty Password");
+            } else {
                 boolean isMatched = false;
-                for (int i = 0; i < Db1.get_Record_List().length; i++){
-                    if (Db1.get_Record_List()[i].get_password().equals(tf_value_password) &&
-                            tf_value_account.equals(Db1.get_Record_List()[i].get_card_f4()
-                                    + Db1.get_Record_List()[i].get_card_s4()
-                                    + Db1.get_Record_List()[i].get_card_t4()
-                                    + Db1.get_Record_List()[i].get_card_l4())){
+                List<Record> recordList = Db1.get_Record_List(); // get the list
+
+                for (Record record : recordList) {
+                    String fullCardNumber = record.get_card_f4()
+                            + record.get_card_s4()
+                            + record.get_card_t4()
+                            + record.get_card_l4();
+                    if (record.get_password().equals(tf_value_password)
+                            && tf_value_account.equals(fullCardNumber)) {
                         label3.setForeground(new Color(0, 255, 0));
                         label3.setText("Successfully Login...");
                         isMatched = true;
                         try {
-                            Accounts.scene2(Db1.get_Record_List()[i]);
+                            Accounts.scene2(record);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
+                        break;
                     }
                 }
+
                 if (!isMatched) {
                     label3.setForeground(new Color(255, 0, 0));
                     label3.setText("Error: Your Username and Password didn't match");
                 }
-            } else {
-                label3.setForeground(new Color(255, 0, 0));
-                label3.setText("Error: Empty Password");
             }
         };
 
@@ -264,15 +277,15 @@ class GUI6 extends JFrame{
         ActionListener actionListener2 = actionEvent -> {
             boolean Debit_Op = radioButton1.isSelected();
             boolean Credit_Op = radioButton2.isSelected();
-            if (!(Debit_Op || Credit_Op)){
+            if (!(Debit_Op || Credit_Op)) {
                 label4.setForeground(new Color(255, 0, 0));
                 label4.setText("Error: You have not selected a registration card option");
             } else {
                 label4.setForeground(new Color(0, 255, 0));
                 label4.setText("Processing...");
-                if (radioButton1.isSelected()){
+                if (radioButton1.isSelected()) {
                     Registration.scene3(Balance_List, Bank_Database);
-                } else if (radioButton2.isSelected()){
+                } else if (radioButton2.isSelected()) {
                     Registration.scene4();
                 }
             }
@@ -468,21 +481,70 @@ class GUI6 extends JFrame{
         frame1.setVisible(true);
     }
 
-    public GUI6() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+    private void writeRecordsToCSV(List<Record> records, String filename) throws IOException {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
+            writer.write("CardNumber,Password,Username");
+            writer.newLine();
+            for (Record record : records) {
+                writer.write(record.get_card_num() + "," + record.get_password() + "," + record.get_user_name());
+                writer.newLine();
+            }
+        }
+    }
+
+    private List<Record> readRecordsFromCSV(String filename) throws Exception {
+        List<Record> records = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+            boolean isFirstLine = true;
+            while ((line = reader.readLine()) != null) {
+                if (isFirstLine) {
+                    isFirstLine = false;
+                    continue;
+                }
+                String[] parts = line.split(",", -1);
+                if (parts.length >= 3) {
+                    String cardNum = parts[0];
+                    String password = parts[1];
+                    String username = parts[2];
+                    records.add(new Record(cardNum, password, username));
+                }
+            }
+        }
+        return records;
+    }
+
+    public GUI6() {
         try {
             Record Record1 = new Record("1520298043025567", "1234567890", "Jingze Dai");
             Record Record2 = new Record("1502756788294430", "abc12345", "daij24");
             Record Record3 = new Record("1111222233334444", "qwer7890", "daijingz");
-            Database Bank_Database = new Database(10, "MoMo Bank Database");
-            Bank_Database.add_Record_List(Record1, Record2, Record3);
+
+            List<Record> records = Arrays.asList(Record1, Record2, Record3);
+
+            writeRecordsToCSV(records, "src\\customer_Financial_Information.csv");
+
+            Database Bank_Database = new Database(1000, "MoMo Bank Database");
+            List<Record> loadedRecords = readRecordsFromCSV("src\\customer_Financial_Information.csv");
+            for (Record r : loadedRecords) {
+                Bank_Database.add_record(r);
+            }
             Login_Page(Bank_Database);
         } catch(Exception e) {
-            exit_Page();
+            System.out.println("Exception occurred in GUI6 constructor:");
+            e.printStackTrace();  // Shows exact line and cause in console
+
+            try {
+                exit_Page();       // Show error GUI
+            } catch (Exception ex) {
+                System.out.println("Exception occurred while trying to show exit page:");
+                ex.printStackTrace();
+            }
         }
     }
 
     // Main Function
-    public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+    public static void main(String[] args) {
         new GUI6();
     }
 }

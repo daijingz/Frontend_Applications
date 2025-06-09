@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 // This is account database class
 // Which includes account
 class Record{
@@ -104,6 +108,10 @@ class Record{
         return this.card_l4;
     }
 
+    public String get_card_num(){
+        return this.card_f4 + this.card_s4 + this.card_t4 + this.card_l4;
+    }
+
     public void set_password(String new_password) throws Exception {
         if (password.length() < 6){
             throw new Exception();
@@ -119,17 +127,17 @@ class Record{
 public class Database{
     private int capacity;
     private String Name;
-    private Record[] Record_List;
+    private List<Record> Record_List;
 
     public Database(int capacity, String Name) throws Exception{
-        if (capacity <= 2 || capacity >= 50){
+        if (capacity <= 2 || capacity >= 2000){
             throw new Exception();
         } else if (Name.length() <= 2){
             throw new Exception();
         }
         this.capacity = capacity;
         this.Name = Name;
-        this.Record_List = new Record[capacity];
+        this.Record_List = new ArrayList<>(capacity);
     }
 
     public void set_capacity(int newCap) throws Exception {
@@ -154,11 +162,15 @@ public class Database{
         return this.Name;
     }
 
-    public void add_Record_List(Record record1, Record record2, Record record3) {
-        this.Record_List = new Record[] {record1, record2, record3};
+    public void add_record_list(Record record1, Record record2, Record record3) {
+        this.Record_List = new ArrayList<>(Arrays.asList(record1, record2, record3));
     }
 
-    public Record[] get_Record_List(){
+    public void add_record(Record record) {
+        this.Record_List.add(record);
+    }
+
+    public List<Record> get_Record_List(){
         return this.Record_List;
     }
 }
