@@ -56,7 +56,10 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## <img src="https://img.icons8.com/ios/50/000000/info--v1.png" width="20" alt="info icon"/> About The Project
+<h2 id="about-the-project">
+  <img src="https://img.icons8.com/ios/50/000000/info--v1.png" width="20" alt="info icon" />
+  About The Project
+</h2>
 This project is a series of Jingze's front-end projects, mainly including:
 
 - [x] Websites, including one or more webpages.
@@ -73,7 +76,10 @@ This project is a series of Jingze's front-end projects, mainly including:
 </p>
 
 <!-- CONTACT -->
-## <img src="https://img.icons8.com/ios/50/000000/name.png" width="20" alt="contact icon"/> Contact
+<h2 id="contact">
+  <img src="https://img.icons8.com/ios/50/000000/name.png" width="20" alt="contact icon"/>
+  Contact
+</h2>
 
 **Personal Email Address** - david1147062956@gmail.com
 
@@ -87,7 +93,10 @@ Personal Portfolio - [https://sites.google.com/view/jingzedaiinfo/personal-info]
   </a>
 </p>
 
-## <img src="https://img.icons8.com/ios/50/000000/document--v1.png" width="20" alt="file icon"/> Folder Structures and File Contents
+<h2 id="folder-structures-and-file-contents">
+  <img src="https://img.icons8.com/ios/50/000000/document--v1.png" width="20" alt="file icon"/> 
+  Folder Structures and File Contents
+</h2>
 
 **{...}** 
   - An independent front-end project. (Every repository is)
